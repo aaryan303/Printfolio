@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import Navbar from './components/Navbar';
 import LandingPage from './pages/LandingPage';
 import BuilderPage from './pages/BuilderPage';
@@ -124,6 +125,7 @@ export default function App() {
           onBackToHome={() => setView('landing')}
         />
       )}
+      <Analytics />
     </div>
   );
 }
