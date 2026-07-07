@@ -76,8 +76,8 @@ If you want to add a new template or fix something, PRs are welcome. Fork it, ma
 
 ## Author
 
-**Aryan Maurya** — [GitHub](https://github.com/aaryan303) · [LinkedIn](https://www.linkedin.com/in/aryan0782)
+**Aryan ** — [LinkedIn](https://www.linkedin.com/in/aryan0782)
 
 ## License
 
-MIT
+USE IT HOW EVER YOU WANT :D
