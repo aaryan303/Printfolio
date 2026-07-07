@@ -83,4 +83,5 @@ Aryan — [LinkedIn](https://www.linkedin.com/in/aryan0782)
 
 ## License
 
-USE IT HOW EVER YOU WANT :D
+MIT
+
