@@ -1,0 +1,8 @@
+# Linguist overrides for accurate GitHub language detection
+
+# Mark lock files as generated (excluded from language stats)
+package-lock.json linguist-generated=true
+
+# Mark vendor/generated directories
+node_modules/ linguist-vendored=true
+dist/ linguist-generated=true

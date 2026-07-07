@@ -1,16 +1,83 @@
-# React + Vite
+# Printfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A portfolio generator for developers. Fill in your details, pick a template, and download a clean HTML file you can host anywhere.
 
-Currently, two official plugins are available:
+No sign-ups, no databases, no backend. Everything runs in the browser.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**Live site:** [printfolio-gamma.vercel.app](https://printfolio-gamma.vercel.app)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## What it does
 
-## Expanding the Oxlint configuration
+Most developers need a portfolio but don't want to spend days designing one from scratch. Printfolio lets you type in your info — name, skills, projects, experience — and instantly preview it across different layouts. When you're happy with it, export it as a single HTML file and throw it on any hosting platform.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+Your data auto-saves to local storage, so you won't lose progress if you close the tab.
+
+## Templates
+
+There are three templates right now:
+
+- **Minimalist** — Clean typography, lots of whitespace, simple borders. Good if you want something that stays out of the way.
+- **Creative** — Colorful cards, thick borders, badge accents. More personality.
+- **Professional** — Split layout with a sidebar for personal info and a main section for experience/education. Classic resume feel.
+
+You can switch between them instantly in the builder.
+
+## Running locally
+
+You'll need Node.js (v18+).
+
+```bash
+git clone https://github.com/aaryan303/Printfolio.git
+cd Printfolio
+npm install
+npm run dev
+```
+
+Opens at `http://localhost:5173`.
+
+## How the export works
+
+The "Export HTML" button generates a fully self-contained HTML file with all styles inlined. No external dependencies, no JavaScript required in the output — just a static page you can open in any browser or deploy to GitHub Pages, Netlify, Vercel, whatever.
+
+There's also JSON export/import if you want to save your data and come back to edit later.
+
+## Project structure
+
+```
+src/
+  components/
+    templates/          # MinimalTemplate, CreativeTemplate, ProfessionalTemplate
+    PortfolioEditor.jsx # The form where you enter your details
+    PortfolioPreview.jsx
+    HeroSection.jsx
+    Navbar.jsx
+  pages/
+    LandingPage.jsx     # Marketing page
+    BuilderPage.jsx     # Editor + preview side by side
+  data/
+    defaultData.js      # Sample data that loads on first visit
+  utils/
+    export.js           # HTML and JSON export logic
+```
+
+## Built with
+
+- React 19
+- Vite 8
+- Tailwind CSS 4
+- Framer Motion (animations)
+- Lucide React (icons)
+
+## Contributing
+
+If you want to add a new template or fix something, PRs are welcome. Fork it, make a branch, and open a pull request.
+
+## Author
+
+**Aryan Maurya** — [GitHub](https://github.com/aaryan303) · [LinkedIn](https://www.linkedin.com/in/aryan0782)
+
+## License
+
+MIT
